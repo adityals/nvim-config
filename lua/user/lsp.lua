@@ -9,6 +9,7 @@ lsp.ensure_installed({
 	'rust_analyzer',
     'golangci_lint_ls',
     'gopls',
+    'pyright',
 })
 
 local cmp = require('cmp')
