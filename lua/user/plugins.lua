@@ -62,4 +62,8 @@ use {
 	}
 }
 
+-- prettier
+use('jose-elias-alvarez/null-ls.nvim')
+use('MunifTanjim/prettier.nvim')
+
 end)
