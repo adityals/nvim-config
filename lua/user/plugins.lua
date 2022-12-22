@@ -38,6 +38,7 @@ use ('nvim-treesitter/playground')
 -- misc
 use('mbbill/undotree')
 use('tpope/vim-fugitive')
+use 'numToStr/Comment.nvim' -- "gc" to comment visual regions/lines
 
 -- LSP
 use {
