@@ -20,12 +20,13 @@ vim_key_map.set("i", "<C-c>", "<Esc>")
 local builtin = require('telescope.builtin')
 vim_key_map.set('n', '<leader>pf', builtin.find_files, {})
 vim_key_map.set('n', '<leader>gf', builtin.git_files, {})
+vim_key_map.set('n', '<leader>fg', builtin.live_grep, {})
+vim_key_map.set('n', '<leader>ff', function ()
+    builtin.find_files({ hidden = true })
+end, { noremap = true, silent = true })
 vim_key_map.set('n', '<leader>ps', function()
-	builtin.grep_string({ search = vim.fn.input("Grep > ") })
+	builtin.grep_string({ search = vim.fn.input("Grep | ") })
 end)
-
--- Telescope file browser
-vim_key_map.set('n', '<leader>fb', ':Telescope file_browser', { noremap = true }) 
 
 -- Undotree
 vim_key_map.set('n', '<leader>u', vim_cmd.UndotreeToggle)
