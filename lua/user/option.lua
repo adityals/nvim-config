@@ -10,3 +10,6 @@ vim_opt["expandtab"] = true
 
 vim_opt["hlsearch"] = false
 vim_opt["incsearch"] = true
+
+vim_opt["smartindent"] = true
+vim_opt["wrap"] = false

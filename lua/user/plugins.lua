@@ -29,7 +29,13 @@ use {
 }
 
 -- color scheme
-use 'folke/tokyonight.nvim'
+use({
+    'rose-pine/neovim',
+    as = 'rose-pine',
+    config = function()
+        vim.cmd('colorscheme rose-pine')
+    end
+})
 
 -- treesitter
 use ('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate'})
@@ -71,5 +77,11 @@ use('MunifTanjim/prettier.nvim')
 use {
     'nvim-lualine/lualine.nvim'
 }
+
+-- zen mode
+use("folke/zen-mode.nvim")
+
+-- file explorer
+use { 'nvim-tree/nvim-tree.lua' }
 
 end)
