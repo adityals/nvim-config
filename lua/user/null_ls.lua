@@ -2,7 +2,21 @@ local null_ls = require("null-ls")
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
 local sources = {
-    null_ls.builtins.formatting.prettier,
+    null_ls.builtins.formatting.prettierd.with({
+        filetypes = {
+            "javascript",
+            "javascriptreact",
+            "typescript",
+            "typescriptreact",
+            "css",
+            "scss",
+            "less",
+            "html",
+            "json",
+            "jsonc",
+            "graphql",
+        },
+    }),
     null_ls.builtins.formatting.gofmt,
     null_ls.builtins.formatting.rustfmt,
 }
