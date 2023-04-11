@@ -16,6 +16,10 @@ vim_key_map.set("n", "<C-j>", "<cmd>cprev<CR>zz")
 
 vim_key_map.set("i", "<C-c>", "<Esc>")
 
+vim_key_map.set({"n", "v"}, "<leader>y", [["+y]])
+vim_key_map.set("n", "<leader>Y", [["+Y]])
+
+
 -- Telescope
 local builtin = require('telescope.builtin')
 vim_key_map.set('n', '<leader>pf', builtin.find_files, {})
