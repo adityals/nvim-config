@@ -1,7 +1,4 @@
-require('rose-pine').setup({
-    dark_variant = 'moon',
-    disable_italics = true,
-    disable_background = true
+require("tokyonight").setup({
+    transparent = true
 })
-
-vim.cmd('colorscheme rose-pine')
+vim.cmd('colorscheme tokyonight-storm')

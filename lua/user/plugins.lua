@@ -29,13 +29,7 @@ use {
 }
 
 -- color scheme
-use({
-    'rose-pine/neovim',
-    as = 'rose-pine',
-    config = function()
-        vim.cmd('colorscheme rose-pine')
-    end
-})
+use 'folke/tokyonight.nvim'
 
 -- treesitter
 use ('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate'})
