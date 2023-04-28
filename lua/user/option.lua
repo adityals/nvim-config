@@ -13,3 +13,5 @@ vim_opt["incsearch"] = true
 
 vim_opt["smartindent"] = true
 vim_opt["wrap"] = false
+
+vim_opt["title"] = true
