@@ -77,4 +77,7 @@ use("folke/zen-mode.nvim")
 -- file explorer
 use { 'nvim-tree/nvim-tree.lua' }
 
+-- terminal
+use { "akinsho/toggleterm.nvim" }
+
 end)
